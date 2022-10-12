@@ -1,0 +1,9 @@
+version: '3'
+services:
+  coreappwithdocker:
+    container_name: sql-csharp
+    # environment: -ASPNETCORE_ENVIRONMENT=Development
+    build: .
+    ports:
+      - '5000:5000'
+    restart: always
